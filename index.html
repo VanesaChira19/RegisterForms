@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- Google Tag Manager -->
+          <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T2BCRDM');
+        </script>
+        <!-- End Google Tag Manager -->
+    <style> 
+        * {
+            box-sizing: border-box;
+        }
+
+        form {
+            padding: 1em;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+        }
+        h1{
+            text-align: center;
+        }
+
+        form input {
+            margin-bottom: 1rem;
+            background: #fff;
+            border: 1px solid #9c9c9c;
+        }
+        form button {
+            background: lightgrey;
+            padding: 0.7em;
+            width:50%;
+            border: 0;
+            
+        }
+        form button:hover {
+            background: rgb(39, 163, 212);
+        }
+
+        label {
+            display: block;
+            padding: 0.5em 1.5em 0.5em 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.7em;
+            margin-bottom: 0.5rem;
+        }
+        textarea{
+            width: 100%;
+            padding: 0.7em;
+            margin-bottom: 0.5rem;
+        }
+        input:focus {
+            outline: 3px solid rgb(39, 163, 212);
+        }
+
+    </style>
+
+     
+   </head>
+    <body>
+
+    <form class="form1" action="indexphp.php" method="POST">
+        <h1 class="text"> CONTACT <br> VANESA</h1>
+        <label>Nume</label>
+        <input id="nume" type="text" name="nume" required="required" /> 
+        
+        <label>Email</label>
+        <input id="email" type="email" name="email" required="required"> 
+        
+        <label>Telefon</label>
+        <input id="telefon" type="number" name="telefon" required="required">
+       
+        <label>Comment</label>
+        <textarea type="textarea" id="comment" rows="4" name="comment" ></textarea>
+      
+        <button type="submit" value="submit" name="submit">Submit</button>
+      </form>
+
+    </body>
+    
+</html>
+
